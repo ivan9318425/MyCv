@@ -3,18 +3,19 @@
     color: #0F172A;
 }
 .myDev{
-    margin-top: 30px;
+    margin-top: 45px;
     width: 100%;
     height: 450px;
     display: grid;
     grid-template-columns: 70% 30%;
+    align-items: center;
 }
 .myDev-left{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
 }
 #myDev-left_img {
     height: 95%;
@@ -26,8 +27,8 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 50% 50%;
-    align-items: center;
+    grid-template-rows: 1fr 1fr;
+ place-items: center;
 }
 .myDev-right_up{
     display: flex;
@@ -36,10 +37,8 @@
     text-align: center;
     align-items: center;
     background-color: #A9D6FF;
-    height: 85%;
-    width:95%;
-    place-items: center;
-    justify-content: center;
+    height: 90%;
+    width:90%;
     margin: 0 auto;
     border-radius: 15px;
 }
@@ -51,8 +50,8 @@ text-align: center;
  justify-content: center;
  align-items: center;
     text-align: center;
-        height: 95%;
-    width:95%;
+        height: 90%;
+    width:90%;
     background-color: #A9D6FF;
     place-items: center;
     margin: 0 auto;
@@ -69,3 +68,5 @@ text-align: center;
   height: 100%;
   width: 100%;
 }
+
+/*Iniciamos con la parte del 
