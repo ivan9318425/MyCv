@@ -75,4 +75,29 @@ text-align: center;
     width: 100%;
     text-align: left;
     margin-top: 50px;
+    padding: 10px 20px;
+
+}
+        .areas_hijo{
+            width: 100%;
+            /* ESTA PROPIEDAD ES CRUCIAL PARA QUE FUNCIONE EL GRID */
+            display: grid; 
+            
+            /* Ajustamos el minmax a 100px para que más tarjetas puedan caber en menos espacio. */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            
+            gap: 20px; 
+            justify-items: center; 
+            align-items: start; 
+        }
+
+.areas_hijo .card{
+     width: 100%; 
+            max-width: 250px; 
+            height: auto; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.2s;
+            overflow: hidden; 
 }
