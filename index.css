@@ -5,7 +5,7 @@
 .myDev{
     margin-top: 45px;
     width: 100%;
-    height: 450px;
+    min-height: 450px;
     display: grid;
     grid-template-columns: 70% 30%;
     align-items: center;
@@ -21,7 +21,7 @@
     height: 95%;
     width: 95%;
     border-radius: 5%;
-
+    object-fit: cover;
 }
 .myDev-right{
     width: 100%;
@@ -69,4 +69,59 @@ text-align: center;
   width: 100%;
 }
 
-/*Iniciamos con la parte del 
+/*Iniciamos con la parte de las aread de it */
+
+.areas{
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+    padding: 10px 20px;
+
+}
+
+        .areas_hijo{
+            width: 100%;
+            /* ESTA PROPIEDAD ES CRUCIAL PARA QUE FUNCIONE EL GRID */
+            display: grid; 
+            
+            /* Ajustamos el minmax a 100px para que más tarjetas puedan caber en menos espacio. */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            
+            gap: 20px; 
+            justify-items: center; 
+            align-items: start; 
+        }
+
+.areas_hijo .card{
+     width: 100%; 
+            max-width: 250px; 
+            height: auto; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.2s;
+            overflow: hidden; 
+}
+
+
+        .hero-presentation {
+            text-align: center;
+            padding: 80px 20px 40px;
+            background-color: #F8F8F8; /* Fondo sutil para destacar */
+            width: 100%;
+        }
+
+        .hero-presentation h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #007BFF; /* Azul Brillante */
+            margin-bottom: 15px;
+        }
+
+        .hero-presentation p {
+            font-size: 1.15rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555555;
+        }
