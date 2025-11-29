@@ -12,14 +12,14 @@ pipeline{
         }
         stage('Build'){
             steps{
-                sh "mkdir -p ${DEST_DIR}"
+                bat "mkdir ${DEST_DIR}"
             }
             
         }
 
         stage('Deploy'){
             steps{
-                sh "cp -R ./* ${DEST_DIR}/"
+                bat "xcopy .\\* ${DEST_DIR}\\ /e /y /h"
             }
         }
     }
