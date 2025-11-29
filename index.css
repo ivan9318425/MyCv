@@ -102,3 +102,26 @@ text-align: center;
             transition: transform 0.2s;
             overflow: hidden; 
 }
+
+
+        .hero-presentation {
+            text-align: center;
+            padding: 80px 20px 40px;
+            background-color: #F8F8F8; /* Fondo sutil para destacar */
+            width: 100%;
+        }
+
+        .hero-presentation h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #007BFF; /* Azul Brillante */
+            margin-bottom: 15px;
+        }
+
+        .hero-presentation p {
+            font-size: 1.15rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555555;
+        }
