@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        DEST_DIR="C:\\inetpub\\wwwroot\\myCv"
+        DEST_DIR="/var/www/html/myCv"
     }
     stages{
                 stage('Checkout scm'){
